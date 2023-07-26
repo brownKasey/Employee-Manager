@@ -1,0 +1,33 @@
+{
+  "name": "employee-manager",
+  "version": "1.0.0",
+  "description": "allows you to view and manage the departments, roles, and employees in your company.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brownKasey/Employee-Manager.git"
+  },
+  "keywords": [
+    "employee",
+    "employee",
+    "tracker",
+    "tracker",
+    "employee",
+    "manager"
+  ],
+  "author": "Kasey Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brownKasey/Employee-Manager/issues"
+  },
+  "homepage": "https://github.com/brownKasey/Employee-Manager#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.4",
+    "mysql2": "^3.5.2"
+  }
+}
