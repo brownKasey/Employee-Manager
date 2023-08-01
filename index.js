@@ -11,6 +11,19 @@ app.use(express.json());
 db.connect(err => {
     if (err) throw err;
     console.log('connected to the database ٩(＾◡＾)۶');
+    console.log(`
+    8888888888                     888                                888b     d888                                                
+    888                            888                                8888b   d8888                                                
+    888                            888                                88888b.d88888                                                
+    8888888   88888b.d88b. 88888b. 888 .d88b. 888  888 .d88b.  .d88b. 888Y88888P888 8888b. 88888b.  8888b.  .d88b.  .d88b. 888d888 
+    888       888 "888 "88b888 "88b888d88""88b888  888d8P  Y8bd8P  Y8b888 Y888P 888    "88b888 "88b    "88bd88P"88bd8P  Y8b888P"   
+    888       888  888  888888  888888888  888888  8888888888888888888888  Y8P  888.d888888888  888.d888888888  88888888888888     
+    888       888  888  888888 d88P888Y88..88PY88b 888Y8b.    Y8b.    888   "   888888  888888  888888  888Y88b 888Y8b.    888     
+    8888888888888  888  88888888P" 888 "Y88P"  "Y88888 "Y8888  "Y8888 888       888"Y888888888  888"Y888888 "Y88888 "Y8888 888     
+                           888                     888                                                          888                
+                           888                Y8b d88P                                                     Y8b d88P                
+                           888                 "Y88P"                                                       "Y88P"                 
+    `);
     init();
 });
 
@@ -23,7 +36,7 @@ let init = function () {
         message: 'What would you like to do?',
         choices: ['View All Department', 'View All Roles', 'View All Employees', 'Add A Department', 'Add A Role', 'Add An Employee', 'Update An Employee Role', 'Log Out']
     }]).then((answers) => {
-        ////selects the department table （＾ｖ＾）
+        //selects the department table （＾ｖ＾）
         if (answers.prompt === 'View All Department') {
             db.query(`SELECT * FROM department`, (err, result) => {
                 if (err) throw err;
@@ -50,7 +63,7 @@ let init = function () {
                 //adds a department to the department table ( ͡° ͜ʖ ͡° )
                 type: 'input',
                 name: 'department',
-                message: 'What is the name of the dpeartment?',
+                message: 'What is the name of the department?',
                 validate: departmentInput => {
                     if (departmentInput) {
                         return true;
