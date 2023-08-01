@@ -33,6 +33,8 @@ Below is a picture of what you'll see in the terminal
 
 ![CLI](./assets/images/Command-Line-Interface.jpg)
 
+![Video](https://drive.google.com/file/d/17qoyMPkNcrhdTWD965qQnleij2j2oTTc/view?usp=sharing)
+
 You can scroll with the up and down arrows and click enter to select what options you want.
 
 
